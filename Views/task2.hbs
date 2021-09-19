@@ -1,0 +1,65 @@
+<style>
+    input{
+        margin-top: 6;
+        margin-bottom: 6;
+    }
+    label{
+        margin-top: 6;
+        margin-bottom: 6;
+        margin-right: 8;
+    }
+</style>
+
+<div class="row justify-content-center">
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-primary active">
+        <input type="radio" name="options" id="language-en" autocomplete="off" checked> en
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="language-ru" autocomplete="off"> ru
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="language-ar" autocomplete="off"> ar
+    </label>
+    </div>
+</div>
+
+<div class="col-lg-12 col-sm-12 text-center">
+    <strong class="formTitle" style="font-size: 40px;">Form title</strong>
+</div>
+
+<form class="col-lg-12 col-sm-12">
+
+    <div class="row justify-content-center">
+        <label class="col-lg-2 col-md-2 col-sm-2 col-2 text-right">first name*:</label>
+        <input class="col-lg-3 col-md-3 col-sm-8 col-8 text-left" id="first_name" type="text">
+
+        <label class="col-lg-2 col-md-2 col-sm-2 col-2 text-right" for="last_name">last name*:</label>
+        <input class="col-lg-3 col-md-3 col-sm-8 col-8 text-left" id="last_name" type="text">
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-2 text-right" for="email">email*:</label>
+        <input class="col-8 text-left" id="email" type="email" class="validate" style="width: 100%;">
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-2 text-right" for="company">company:</label>
+        <input class="col-8 text-left" id="company" type="text" class="validate" style="width: 100%;">
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-2 text-right" for="city">city*:</label>
+        <input class="col-8 text-left" id="city" type="text" class="validate" style="width: 100%;">
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-2 text-right" for="message">message*:</label>
+        <textarea class="col-8 text-left" id="message" rows="3" style="width: 100%;"></textarea>
+    </div>
+
+</form>
+
+<div class="row justify-content-center">
+    <button class="col-lg-2 col-md-2 col-sm-10 col-10" style="margin:0 auto; display: block; height: 50px;">Send</button>
+</div>

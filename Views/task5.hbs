@@ -1,0 +1,75 @@
+<style>
+    input, textarea, button{
+        margin-top: 6;
+        margin-bottom: 6;
+    }
+    label{
+        margin-top: 6;
+        margin-bottom: 6;
+        margin-right: 8;
+    }
+</style>
+
+<div class="row justify-content-center">
+    <div id="languageButtons" class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-primary active" data-id="input-en">
+        <input id="input-en" class="languageButton" type="radio" name="options" data-id="en" autocomplete="off" checked> en
+    </label>
+    <label class="btn btn-primary" data-id="input-ru">
+        <input id="input-ru" class="languageButton" type="radio" name="options" data-id="ru" autocomplete="off"> ru
+    </label>
+    <label class="btn btn-primary" data-id="input-ar">
+        <input id="input-ar" class="languageButton" type="radio" name="options" data-id="ar" autocomplete="off"> ar
+    </label>
+    </div>
+</div>
+
+<div class="col-lg-12 col-sm-12 text-center">
+    <strong class="formTitle" style="font-size: 40px;">Form title</strong>
+</div>
+
+<div class="row justify-content-center">
+    <label id="notificationSuccess" class="col-10" style="display:none; background-color: #90EE90; text-align: center; color: #006400">Данные формы успешно отправлены</label>
+</div>
+
+<div class="row justify-content-center">
+    <label id="notificationFailed" class="col-10" style="display:none; background-color: #E9967A; text-align: center; color: #fd583b">При обработке формы получены ошибки</label>
+</div>
+
+<form class="col-lg-12 col-sm-12" >
+
+    <div class="row justify-content-center">
+        <label class="col-lg-2 col-md-2 col-sm-2 col-2 text-right">first name*:</label>
+        <input class="col-lg-3 col-md-3 col-sm-8 col-8 text-left" id="first_name" type="text" required pattern="(.){5,}">
+
+        <label class="col-lg-2 col-md-2 col-sm-2 col-2 text-right" for="last_name">last name*:</label>
+        <input class="col-lg-3 col-md-3 col-sm-8 col-8 text-left" id="last_name" type="text" required pattern="(.){5,}">
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-2 text-right" for="email">email*:</label>
+        <input class="col-8 text-left" id="email" type="email" class="validate" style="width: 100%;" required pattern="^([a-z]){1}[a-z0-9_-]*@[a-z0-9_\.-]+\.[a-z]{2,3}$">
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-2 text-right" for="company">company:</label>
+        <input class="col-8 text-left" id="company" type="text" class="validate" style="width: 100%;">
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-2 text-right" for="city">city*:</label>
+        <input class="col-8 text-left" id="city" type="text" class="validate" style="width: 100%;" required pattern="(.){5,}">
+    </div>
+
+    <div class="row justify-content-center">
+        <label class="col-2 text-right" for="message">message*:</label>
+        <textarea class="col-8 text-left" id="message" rows="3" style="width: 100%;" required pattern="(.){5,}"></textarea>
+    </div>
+
+    <div class="row justify-content-center">
+        <button id="submitForm" type="submit" class="col-lg-2 col-md-2 col-sm-10 col-10" style="margin:0 auto; display: block; height: 50px;">Send</button>
+    </div>
+
+</form>
+
+<script src="task5.js"></script>
